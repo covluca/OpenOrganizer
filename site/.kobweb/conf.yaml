@@ -1,0 +1,14 @@
+site:
+  title: "Kobweb_test"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/kobweb_test.js"
+      api: "build/libs/kobweb_test.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/kobweb_test.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
